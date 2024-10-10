@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+
+header{
+    padding: 1% 0;
+}
+
+header .center{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header .logo{
+    width: 20%;
+}
+
+header .menu{
+    width: 80%;
+    padding-top: 4vh;
+    text-align: right;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header .menu a{
+    /* display: block; */
+    /* padding: 0 15px; */
+    cursor: pointer;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Verdana, Tahoma, Geneva, 'Segoe UI', sans-serif;
+    color: black;
+}
+
+section .extras{
+    display: block;
+    position: absolute;
+    right: -50vw;
+    bottom: -24vw;
+    background-color: #017143;
+    width: 50vw;
+    height: 50vw;
+    min-width: 600px;
+    min-height: 600px;
+    border-radius: 100%;
+}
+
+section .extras .social a{
+    display: block;
+    margin-bottom: 15px;
+}
+
+section .extras .social{
+    position: relative;
+    margin-top: 43vh;
+    margin-left: 38vw;
+}
+
+section .extras .product{
+    position: absolute;
+    top: 0;
+}
+
+section .description{
+    margin-top: 20vh;
+    margin-left: 5vw;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .description h1{
+    position: relative;
+    top: -20vh;
+    left: -2vw;
+}
+
+section .description h1 span{
+    color: #017143;
+}
+
+section .description p{
+    font-size: 15px;
+    margin-top: -18px;
+    font-weight: bold;
+    max-width: 46vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .more button{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #017143;
+    color: white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 1000px){
+    section .extras{
+        right: -35vw;
+        width: 75vw;
+        height: 75vw;
+    }
+
+    section .extras .social{
+        margin-top: 40vh;
+        margin-left: 35vw;
+    }
+
+    section .description h1{
+        position: static;
+    }
+
+    section .description p{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    section .extras{
+        bottom: -30vw;
+        right: -30vw;
+        width: 70vw;
+        height: 70vw;
+    }
+
+    section .extras .social{
+        margin-top: 30vh;
+        margin-left: 37vw;
+    }
+
+    section .description{
+        margin-top: 20vh;
+        margin-left: 15vw;
+        font-size: 35px;
+    }
+
+    section .description h1{
+        position: static;
+    }
+
+    section .description p{
+        font-size: 15px;
+        margin-top: 12px;
+        max-width: 46vw;
+    }
+}
